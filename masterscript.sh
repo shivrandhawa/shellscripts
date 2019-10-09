@@ -20,7 +20,7 @@ echo $a
 
 systemctl enable nfs-server.service
 systemctl start nfs-server.service
-
+exportfs -v
 
 cd /etc
 echo "/home/$username 10.211.55.0/24(rw,no_root_squash)">>exports
